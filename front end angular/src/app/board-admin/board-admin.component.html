@@ -1,0 +1,33 @@
+<div class="container">
+  <header class="jumbotron">
+   
+
+
+    
+  </header>
+  <table class="table table-striped">
+    <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of content">
+        <td>{{ user.id }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.role }}</td>
+        <td class="text-end">
+          <a href="{{'edituser?id='+user.id}}" type="button" class="btn btn-light btn-small"><i class="bi bi-pencil"></i>
+            Edit</a>
+          <button type="button"  (click)="deleteUser(user.id)" class="btn btn-light">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
