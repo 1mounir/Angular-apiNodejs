@@ -15,6 +15,7 @@ import { BoardUserComponent } from './board-user/board-user.component';
 
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
 import { EdituserComponent } from './edituser/edituser.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { EdituserComponent } from './edituser/edituser.component';
     BoardAdminComponent,
     BoardModeratorComponent,
     BoardUserComponent,
-    EdituserComponent
+    EdituserComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,

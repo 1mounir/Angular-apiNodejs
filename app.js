@@ -1,5 +1,5 @@
 const express = require('express');
-const exphbs = require('express-handlebars');
+//const exphbs = require('express-handlebars');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
 const verify =require("./server/routes/verify");
@@ -42,8 +42,8 @@ app.use(cookieParser());
   });
 
 // Templating Engine
-app.engine('hbs', exphbs( {extname: '.hbs' }));
-app.set('view engine', 'hbs');
+//app.engine('hbs', exphbs( {extname: '.hbs' }));
+//app.set('view engine', 'hbs');
 //app.use(userController.login);
 //app.use(userController.authentication);
 

@@ -42,7 +42,7 @@ export class BoardAdminComponent implements OnInit {
         this.msg = err.error.message || err.error || err.message;
 
         if (err.status === 403)
-          this.eventBusService.emit(new EventData('logout', null));
+          this.eventBusService.emit(new EventData('delete', null));
       }
     )
   }
